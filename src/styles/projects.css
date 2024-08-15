@@ -1,0 +1,258 @@
+/* Project styles */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 0px;
+    max-width: 100%;
+}
+
+.project-tile {
+    position: relative;
+    flex: 0 0 auto;
+    margin-bottom: 15px;
+    margin-left: 42px;
+    width: 76%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s;
+    box-shadow: 5px 6px 6px rgba(0, 0, 0, 0.8);
+}
+
+.project-tile:hover {
+    background-color: rgba(156, 163, 175, 0.5);
+}
+
+.project-tile .overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-tile:hover .overlay {
+    opacity: 1;
+}
+
+.project-tile .overlay a {
+    display: block;
+    margin: 8px 0;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project-tile .overlay a:hover {
+    background-color: #555;
+}
+
+/* Ensure project images fit within the tiles */
+.project-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* ------------------------  Media Queries  ----------------------------- */
+
+
+/* Small screens (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        row-gap: 30px;
+        column-gap: 30px;
+        justify-content: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+  
+    .project-tile {
+        position: relative;
+        height: 170px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s;
+        box-shadow: 10px 12px 12px rgba(0, 0, 0, 0.9);
+        margin: 0;
+    }
+  
+    .project-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+  
+    .project-tile .overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+  
+    .project-tile .overlay a {
+        display: block;
+        margin: 3px 0;
+        padding: 8px 16px;
+        border-radius: 2px;
+        text-align: center;
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+}
+
+/* ---------------------------------------------------------------------- */
+
+
+/* Medium screens (small laptops, 1024px and up) */
+@media (min-width: 1024px) {
+
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        row-gap: 30px;
+        column-gap: 30px;
+        justify-content: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+  
+    .project-tile {
+        position: relative;
+        height: 220px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s;
+        box-shadow: 10px 12px 12px rgba(0, 0, 0, 0.9);
+        margin: 0;
+    }
+  
+    .project-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+  
+    .project-tile .overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+  
+    .project-tile .overlay a {
+        display: block;
+        margin: 3px 0;
+        padding: 8px 16px;
+        border-radius: 2px;
+        text-align: center;
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+}
+
+
+/* ---------------------------------------------------------------------- */
+
+
+/* Large screens (desktops, 1280px and up) */
+@media (min-width: 1280px) {
+
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 0px 0px;
+        max-width: 1500px;
+        height: 180px;
+        margin: 50px;
+    }
+      
+    .project-tile {
+        position: relative;
+        flex: 0 0 400px;
+        margin: 0 16px;
+        height: 190px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s;
+        box-shadow: 10px 12px 12px rgba(0, 0, 0, 0.8);
+    }
+      
+    .project-tile:hover {
+        background-color: #9ca3af;
+    }
+      
+    .project-tile .overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+      
+    .project-tile:hover .overlay {
+        opacity: 1;
+    }
+      
+    .project-tile .overlay a {
+        display: block;
+        margin: 8px 0;
+        padding: 8px 16px;
+        border-radius: 4px;
+        text-align: center;
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+      
+    .project-tile .overlay a:hover {
+        background-color: #555;
+    }
+      
+    .project-image {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+}

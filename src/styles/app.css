@@ -1,0 +1,309 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lobster&family=Pacifico&display=swap');
+
+/* General styles for the application */
+
+body {
+    overflow-x: hidden;
+    font-size: 10px;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+  
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.nav-link {
+    padding: 8px;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #9CA3AF; /* Tailwind gray-400 */
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+/* Header styles */
+header {
+    background-color: #232324; /* Update to the desired color */
+    color: #fff;
+    padding: 16px 32px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+ul {
+    display: flex;
+    justify-content: space-around;
+    width: 120%;
+    list-style-type: none;
+    margin: 0 auto;
+}
+  
+ul li {
+    margin: 10 5px;
+}
+  
+ul li:first-child {
+    margin-left: -20px;
+}
+  
+ul li:last-child {
+    margin-right: -10px;
+}
+  
+.nav-link {
+    display: flex;
+    font-size: 8px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+  
+.nav-link:hover {
+    color: #61dafb;
+}
+
+footer {
+    background-color: #232324;
+    color: #fff;
+    padding: 16px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Welcome section */
+.welcome-section {
+    padding: 80px 0;
+    margin-top: -80px;
+}
+  
+.welcome-section h1 {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+  
+.welcome-section p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* ------------------------  Media Queries  ----------------------------- */
+
+
+/* Small screens (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+        font-size: 16px;
+    }
+    
+    .nav-link {
+        font-size: 16px;
+    }
+
+    footer {
+        background-color: #232324;
+        color: #fff;
+        padding: 12px 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .welcome-section {
+        padding: 5rem 0;
+        margin-top: 140px;
+    }
+      
+    .welcome-section h1 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+      
+    .welcome-section p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* ---------------------------------------------------------------------- */
+
+
+/* Medium screens (small laptops, 1024px and up) */
+@media (min-width: 1024px) {
+
+    body {
+        overflow-x: hidden;
+        font-size: 22px;
+    }
+    
+    .nav-link {
+        font-size: 16px;
+    }
+
+    footer {
+        background-color: #232324;
+        color: #fff;
+        padding: 12px 0;
+        text-align: center;
+        margin-top: 12px;
+    }
+    
+    .welcome-section {
+        padding: 5rem 0;
+        margin-top: 340px;
+    }
+      
+    .welcome-section h1 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+      
+    .welcome-section p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* ---------------------------------------------------------------------- */
+
+
+/* Large screens (desktops, 1280px and up) */
+@media (min-width: 1280px) {
+
+    body {
+        overflow-x: hidden;
+        font-size: 16px;
+    }
+      
+    .App-header {
+        background-color: #282c34;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(10px + 2vmin);
+        color: white;
+    }
+    
+    .nav-link {
+        padding: 0.5rem;
+        transition: color 0.3s;
+        cursor: pointer;
+    }
+    
+    .nav-link:hover {
+        color: #61dafb;
+    }
+    
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    header {
+        background-color: #232324;
+        color: #fff;
+        padding: 16px 32px;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+      
+    ul {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
+    }
+      
+    ul li {
+        margin: 0 64px;
+    }
+      
+    ul li:first-child {
+        margin-left: 85px;
+    }
+      
+    ul li:last-child {
+        margin-right: auto;
+    }
+      
+    .nav-link {
+        display: flex;
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    footer {
+        background-color: #232324;
+        color: #fff;
+        padding: 16px 0;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .welcome-section {
+        padding: 80px 0;
+        margin-top: 60px;
+    }
+      
+    .welcome-section h1 {
+        font-size: 40px;
+        margin-bottom: 16px;
+    }
+      
+    .welcome-section p {
+        font-size: 20px;
+        margin-bottom: 80px;
+    }
+
+}

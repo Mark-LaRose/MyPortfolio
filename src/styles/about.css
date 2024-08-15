@@ -1,0 +1,248 @@
+/* Waves effect */
+#waves-container canvas {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Custom scrollbar styles for webkit browsers */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2C2C2C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #2C2C2C, #4A4A4A);
+  border-radius: 8px;
+  border: 3px solid #2C2C2C;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Custom scrollbar styles for Firefox */
+* {
+  scrollbar-width: 16px;
+  scrollbar-color: #232324 #313131;
+}
+
+/* About section */
+.about-section {
+  margin-top: 0px;
+  margin-left: 20px;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  width:340px;
+  margin-left: -20px;
+}
+
+.about-image {
+  width: 180px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: flex;
+  transform: translateY(-60px);
+  margin-top: 100px;
+  box-shadow: 10px 12px 12px rgba(0, 0, 0, 0.8);
+}
+
+.about-title {
+  position: absolute;
+  top: -40px;
+  left: -20px;
+  transform: rotate(-15deg);
+  font-family: 'Dancing Script', cursive;
+  font-size: 28px;
+  color: #333;
+}
+
+.about-text {
+  width: 500px;
+  text-align: center;
+  margin-top: -20px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.about-text p {
+  font-size: 20px;
+  text-indent: 32px;
+}
+
+
+/* ------------------------  Media Queries  ----------------------------- */
+
+
+/* Small screens (tablets, 768px and below) */
+@media (min-width: 768px) {
+
+  .about-image {
+    width: 220px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: flex;
+    transform: translateY(-60px);
+    margin-top: 140px;
+    margin-left: 45px;
+    box-shadow: 10px 12px 12px rgba(0, 0, 0, 0.8);
+  }
+
+  .about-text {
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .about-section {
+    margin-top: 0px;
+    margin-left: 20px;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
+  .about-container {
+    display: flex;
+    align-items: flex-start;
+    width:600px;
+    margin-left: -20px;
+  }
+
+  .about-text p {
+    font-size: 24px;
+    text-indent: 32px;
+  }
+
+}
+
+
+/* ---------------------------------------------------------------------- */
+
+
+/* Medium screens (small laptops, 1024px and below) */
+@media (min-width: 1024px) and (max-width: 1024px) and (min-height: 1366px) and (max-height: 1366px) {
+
+  .about-image {
+    width: 260px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: flex;
+    transform: translateY(-60px);
+    margin-top: 180px;
+    margin-left: 45px;
+    box-shadow: 10px 12px 12px rgba(0, 0, 0, 0.8);
+  }
+
+  .about-text {
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 70px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .about-section {
+    margin-top: 0px;
+    margin-left: 20px;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
+  .about-container {
+    display: flex;
+    align-items: flex-start;
+    width:600px;
+    margin-left: -20px;
+  }
+
+  .about-text p {
+    font-size: 24px;
+    text-indent: 32px;
+  }
+
+}
+
+/* ---------------------------------------------------------------------- */
+
+
+/* Large screens (desktops, 1280px and up) */
+@media (min-width: 1280px) {
+
+  #waves-container canvas {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .about-section {
+    margin-top: 40px;
+    margin-left: 100px;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: flex-start;
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-image {
+    width: 260px;
+    height: 340px;
+    border-radius: 50%;
+    object-fit: flex;
+    transform: translateY(0px);
+    margin-right: 64px;
+    margin-left: -100px;
+    margin-top: 5px;
+    box-shadow: 10px 12px 12px rgba(0, 0, 0, 0.8);
+  }
+  
+  .about-title {
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    transform: rotate(-15deg);
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .about-text {
+    width: 400px;
+    text-align: left;
+    margin-top: 0px;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .about-text p {
+    font-size: 25px;
+    text-indent: 32px;
+  }  
+}
