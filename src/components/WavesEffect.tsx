@@ -88,7 +88,7 @@ const WavesEffect: React.FC = () => {
         }
       }
       renderer.render(scene, camera);
-      count += 0.5;
+      count += 5;
     }
 
     init();
