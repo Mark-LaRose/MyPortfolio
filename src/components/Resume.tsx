@@ -16,8 +16,8 @@ const Resume: React.FC<{ onBack: () => void }> = ({ onBack }) => {
         </div>
         <div className="resume-download-links">
           <a
-            href="/Resume.pdf"
-            download="Resume.pdf"
+            href="/Mark-LaRose-Resume.pdf"
+            download="Mark-LaRose-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 block mb-2"
