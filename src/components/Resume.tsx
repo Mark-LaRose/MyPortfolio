@@ -15,7 +15,15 @@ const Resume: React.FC<{ onBack: () => void }> = ({ onBack }) => {
           <img src={resumeImage} alt="My Resume" className="resume-image mx-auto" />
         </div>
         <div className="resume-download-links">
-          <a href={resumeImage} download="Resume.png" className="text-blue-500 block mb-2" target="_blank" rel="noopener noreferrer">Download Resume as PDF</a>
+          <a
+            href="/Resume.pdf"
+            download="Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 block mb-2"
+          >
+            Download Resume as PDF
+          </a>
         </div>
         <button className="mt-4 p-2 bg-gray-700 text-white rounded hover:bg-gray-500 hover:text-black" onClick={onBack}>Back to Portfolio</button>
       </div>
