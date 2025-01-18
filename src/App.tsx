@@ -31,7 +31,7 @@ const App: React.FC = () => {
           <div className="about-container">
             <img src={profileImage} alt="My Portrait" className="about-image" />
             <div className="about-text">
-              <p>Hi! I'm Mark LaRose, An aspiring Developer with a passion for creating web applications and software. I have experience in JavaScript, React, TypeScript, HTML, CSS, Tailwind, and Bootstrap. I am continuously learning and always eager to dive into new technologies. Explore my portfolio, and check out my projects below to see what I've been working on!</p>
+              <p>Hi! I'm Mark LaRose, An aspiring Developer with a passion for creating web applications and software. I have experience in JavaScript, React, TypeScript, HTML, CSS, Express.js, Node.js, APIs, and databases such as SQL, PostgreSQL, and MongoDB. My main focus is the MERN stack, but I am also continuously learning and eager to dive into new technologies. Explore my portfolio, and check out my projects below to see what I've been working on!</p>
             </div>
           </div>
         </section>

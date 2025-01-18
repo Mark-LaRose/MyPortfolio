@@ -10,7 +10,7 @@ const Resume: React.FC<{ onBack: () => void }> = ({ onBack }) => {
   return (
     <section id="resume" className="py-20 bg-gray-100 text-center">
       <div>
-        <p>Here you can view or download my resume.</p>
+        <p className="mb-12">Here you can view or download my resume.</p>
         <div className="resume-image-container my-4">
           <img src={resumeImage} alt="My Resume" className="resume-image mx-auto" />
         </div>
@@ -20,7 +20,7 @@ const Resume: React.FC<{ onBack: () => void }> = ({ onBack }) => {
             download="Mark-LaRose-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 block mb-2"
+            className="text-blue-500 block mb-2 mt-12"
           >
             Download Resume as PDF
           </a>
