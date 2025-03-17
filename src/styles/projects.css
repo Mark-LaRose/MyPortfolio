@@ -201,6 +201,13 @@
         height: 180px;
         margin: 50px;
     }
+
+    .projects-container:first-of-type {
+        display: flex;
+        justify-content: right; /* Centers the first row */
+        margin-left: 120px;
+        gap: 30px;
+    }
       
     .project-tile {
         position: relative;
