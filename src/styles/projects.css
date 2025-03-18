@@ -198,13 +198,14 @@
         justify-content: flex-start;
         padding: 0px 0px;
         max-width: 1500px;
-        height: 180px;
+        height: 210px;
         margin: 50px;
+        margin-bottom: -20px;
     }
 
     .projects-container:first-of-type {
         display: flex;
-        justify-content: right; /* Centers the first row */
+        justify-content: right;
         margin-left: 120px;
         gap: 30px;
     }

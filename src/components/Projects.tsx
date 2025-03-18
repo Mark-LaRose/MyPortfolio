@@ -10,17 +10,17 @@ import projectImage7 from '../images/Project07.png';
 const Projects: React.FC = () => {
   // First row (3 projects)
   const firstRow = [
-    { id: 1, title: 'Project 1', image: projectImage1, codeLink: '#', projectLink: '#' },
-    { id: 2, title: 'Project 2', image: projectImage2, codeLink: '#', projectLink: '#' },
-    { id: 3, title: 'Project 3', image: projectImage3, codeLink: '#', projectLink: '#' },
+    { id: 1, title: 'Project 1', image: projectImage1, codeLink: 'https://github.com/Mark-LaRose/Take5-Movies', projectLink: 'https://take5-movies.onrender.com/' },
+    { id: 2, title: 'Project 2', image: projectImage2, codeLink: 'https://github.com/Mark-LaRose/Zero-Amp-Music' },
+    { id: 3, title: 'Project 3', image: projectImage3, codeLink: 'https://github.com/Mark-LaRose/Math', projectLink: 'https://mark-larose.github.io/Math/' },
   ];
 
   // Second row (4 projects)
   const secondRow = [
-    { id: 4, title: 'Project 4', image: projectImage4, codeLink: '#', projectLink: '#' },
-    { id: 5, title: 'Project 5', image: projectImage5, codeLink: '#', projectLink: '#' },
-    { id: 6, title: 'Project 6', image: projectImage6, codeLink: '#', projectLink: '#' },
-    { id: 7, title: 'Project 7', image: projectImage7, codeLink: '#', projectLink: '#' },
+    { id: 4, title: 'Project 4', image: projectImage4, codeLink: 'https://github.com/Mark-LaRose/King-s-Chess', projectLink: 'https://mark-larose.github.io/King-s-Chess/' },
+    { id: 5, title: 'Project 5', image: projectImage5, codeLink: 'https://github.com/Mark-LaRose/Select-Your-Color', projectLink: 'https://mark-larose.github.io/Select-Your-Color/' },
+    { id: 6, title: 'Project 6', image: projectImage6, codeLink: 'https://github.com/Mark-LaRose/Select-Your-Font', projectLink: 'https://mark-larose.github.io/Select-Your-Font/' },
+    { id: 7, title: 'Project 7', image: projectImage7, codeLink: 'https://github.com/Mark-LaRose/MyBattlefield', projectLink: 'https://mybattlefield.onrender.com/' },
   ];
 
   return (

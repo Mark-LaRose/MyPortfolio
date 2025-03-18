@@ -67,7 +67,7 @@ const App: React.FC = () => {
         {renderSection()}
       </main>
       <footer className="py-4 text-white text-center">
-        <p>&copy; 2024 Mark LaRose</p>
+        <p>&copy; 2025 Mark LaRose</p>
       </footer>
     </div>
   );
