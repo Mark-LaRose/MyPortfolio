@@ -1,5 +1,6 @@
 // src/components/Resume.tsx
 import React, { useEffect } from 'react';
+import resumeImage from '../images/Resume.png';
 
 const Resume: React.FC<{ onBack: () => void }> = ({ onBack }) => {
   useEffect(() => {
@@ -11,7 +12,7 @@ const Resume: React.FC<{ onBack: () => void }> = ({ onBack }) => {
       <div>
         <p className="mb-12">Here you can view or download my resume.</p>
         <div className="resume-image-container my-4">
-        <img src="/Resume.png" alt="My Resume" className="resume-image mx-auto" />
+          <img src={resumeImage} alt="My Resume" className="resume-image mx-auto" />
         </div>
         <div className="resume-download-links">
           <a
