@@ -202,13 +202,6 @@
         margin: 50px;
         margin-bottom: -20px;
     }
-
-    .projects-container:first-of-type {
-        display: flex;
-        justify-content: right;
-        margin-left: 120px;
-        gap: 30px;
-    }
       
     .project-tile {
         position: relative;
